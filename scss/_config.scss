@@ -1,0 +1,6 @@
+$primary-color: hsl(0, 0%, 30%);
+$secondary-color: hsl(50, 90%, 50%);
+
+@mixin easeOut {
+  transition: all 0.5s ease-out;
+}
