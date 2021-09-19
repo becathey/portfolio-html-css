@@ -78,3 +78,20 @@ main {
     overflow: hidden; }
     main#home h1 {
       margin-top: 20vh; }
+
+@media screen and (max-width: 768px) {
+  main {
+    align-items: center;
+    text-align: center; }
+    main .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem; } }
+
+@media screen and (max-width: 500px) {
+  .menu ul li {
+    font-size: 1rem;
+    font-weight: 200; }
+    .menu ul li a {
+      padding: 8px 10px; }
+  main#home h1 {
+    margin-top: 10vh; } }
