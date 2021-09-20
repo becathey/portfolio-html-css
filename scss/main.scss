@@ -35,19 +35,15 @@ header {
   width: 100%;
   background: darken($primary-color, 2);
 }
-.menu {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: sticky;
-  top: 0;
-}
 .menu ul {
   display: flex;
+  justify-content: center;
   list-style: none;
   margin: 20px 0;
+  padding: 0;
 }
 .menu ul li {
+  display: inline-block;
   font-size: 1.1rem;
   font-weight: bold;
 }

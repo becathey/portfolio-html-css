@@ -7,7 +7,7 @@ $secondary-color: hsl(50, 90%, 50%);
 
 // Media Query mixins
 @mixin mediaSm {
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 468px) {
     @content;
   }
 }
