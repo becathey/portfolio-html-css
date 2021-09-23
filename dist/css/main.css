@@ -62,7 +62,7 @@ header {
 
 main {
   padding: 4rem;
-  height: 100%; }
+  min-height: calc(100vh - 60px); }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
@@ -75,13 +75,62 @@ main {
     main#home h1 {
       margin-top: 20vh; }
 
+#about h1 {
+  margin-top: 10vh; }
+
+.about-info {
+  display: grid;
+  gap: 30px;
+  grid-template-areas: "bioimage bio bio" "skillstitle skillstitle skillstitle" "skills1 skills2 skills3";
+  grid-template-columns: repeat(3, 1fr); }
+
+.bio-image {
+  grid-area: bioimage;
+  margin: auto;
+  border-radius: 50%;
+  border: 3px solid #f2cc0d; }
+
+.bio {
+  grid-area: bio;
+  font-size: 1.5rem; }
+
+.skills-title {
+  grid-area: skillstitle;
+  font-size: 1.5rem; }
+
+.skills-front {
+  grid-area: skills1; }
+
+.skills-back {
+  grid-area: skills2; }
+
+.skills-tools {
+  grid-area: skills3; }
+
+.skills {
+  background: #595959;
+  border-bottom: 5px solid #f2cc0d;
+  padding: 0.5rem; }
+
+#main-footer {
+  height: 60px;
+  padding: 1rem;
+  background: #333333;
+  text-align: center; }
+
 @media screen and (max-width: 768px) {
   main {
     align-items: center;
     text-align: center; }
     main .lg-heading {
       line-height: 1;
-      margin-bottom: 1rem; } }
+      margin-bottom: 1rem; }
+  .about-info {
+    grid-template-areas: "bioimage" "bio" "skillstitle" "skills1" "skills2" "skills3";
+    grid-template-columns: 1fr; }
+  .skills {
+    align-items: flex-start;
+    text-align: left; } }
 
 @media screen and (max-width: 468px) {
   .menu ul li {

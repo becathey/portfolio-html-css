@@ -16,6 +16,20 @@
       margin-bottom: 1rem;
     }
   }
+  .about-info {
+    grid-template-areas:
+      "bioimage"
+      "bio"
+      "skillstitle"
+      "skills1"
+      "skills2"
+      "skills3";
+    grid-template-columns: 1fr;
+  }
+  .skills {
+    align-items: flex-start;
+    text-align: left;
+  }
 }
 
 // Smartphones
@@ -24,7 +38,7 @@
     font-size: 1rem;
     font-weight: 200;
     a {
-        padding: 8px 10px;
+      padding: 8px 10px;
     }
   }
   main#home h1 {
