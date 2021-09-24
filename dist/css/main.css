@@ -112,6 +112,9 @@ main {
   border-bottom: 5px solid #f2cc0d;
   padding: 0.5rem; }
 
+#work h1 {
+  margin-top: 10vh; }
+
 .projects {
   display: grid;
   gap: 30px;
