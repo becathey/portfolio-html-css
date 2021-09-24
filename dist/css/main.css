@@ -112,6 +112,34 @@ main {
   border-bottom: 5px solid #f2cc0d;
   padding: 0.5rem; }
 
+.projects {
+  display: grid;
+  gap: 0.7rem;
+  grid-template-columns: repeat(3, 1fr); }
+  .projects img {
+    width: 100%;
+    border: 3px solid #fff; }
+    .projects img:hover {
+      opacity: 0.5;
+      border-color: #f2cc0d;
+      transition: all 0.5s ease-out; }
+
+.btn, .btn-dark, .btn-light {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem; }
+  .btn:hover, .btn-dark:hover, .btn-light:hover {
+    background: #f2cc0d; }
+
+.btn-dark {
+  background: black;
+  color: #fff; }
+
+.btn-light {
+  background: #cccccc;
+  color: #333; }
+
 #main-footer {
   height: 60px;
   padding: 1rem;
