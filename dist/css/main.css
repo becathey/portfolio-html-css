@@ -149,6 +149,31 @@ main {
   text-align: left;
   background: #595959; }
 
+#contact h1 {
+  margin-top: 10vh; }
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem; }
+  .boxes .box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    border: 3px solid #fff;
+    margin-bottom: 3rem;
+    padding: 1.5rem 2.5rem;
+    transition: all 0.5s ease-out; }
+    .boxes .box a {
+      margin: 0 10px; }
+    .boxes .box:hover {
+      padding: 0.5rem 1.5rem;
+      background: #f2cc0d; }
+
 .btn, .btn-dark, .btn-light {
   display: block;
   padding: 0.5rem 1rem;
