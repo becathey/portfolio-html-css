@@ -1,5 +1,9 @@
 // Widescreens
 @include mediaXl {
+  main#home {
+    align-items: center;
+    text-align: center;
+  }
   .projects {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -7,6 +11,10 @@
 
 // Desktops & Laptops
 @include mediaLg {
+  main#home {
+    align-items: center;
+    text-align: center;
+  }
   .projects {
     grid-template-columns: repeat(3, 1fr);
   }

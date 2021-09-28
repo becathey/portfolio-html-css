@@ -198,10 +198,16 @@ main {
   text-align: center; }
 
 @media screen and (min-width: 1171px) {
+  main#home {
+    align-items: center;
+    text-align: center; }
   .projects {
     grid-template-columns: repeat(4, 1fr); } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
+  main#home {
+    align-items: center;
+    text-align: center; }
   .projects {
     grid-template-columns: repeat(3, 1fr); } }
 
