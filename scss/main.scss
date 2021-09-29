@@ -25,6 +25,9 @@ h3 {
     background: lighten($primary-color, 2);
   }
 }
+.text-secondary {
+  color: $secondary-color;
+}
 a {
   color: #fff;
   text-decoration: none;
@@ -41,25 +44,23 @@ header {
   list-style: none;
   margin: 20px 0;
   padding: 0;
+  li {
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: bold;
+    a {
+      color: white;
+      padding: 8px 15px;
+      &:hover {
+        color: black;
+        background-color: $secondary-color;
+        box-shadow: 0 0 10px white;
+        @include easeOut();
+      }
+    }
+  }
 }
-.menu ul li {
-  display: inline-block;
-  font-size: 1.1rem;
-  font-weight: bold;
-}
-.menu ul li a {
-  color: white;
-  padding: 8px 15px;
-  @include easeOut();
-}
-.menu ul li a:hover {
-  background-color: $secondary-color;
-  color: black;
-  box-shadow: 0 0 10px white;
-}
-.text-secondary {
-  color: $secondary-color;
-}
+
 main {
   padding: 4rem;
   min-height: calc(100vh - 60px);
@@ -205,15 +206,15 @@ main {
     background: $secondary-color;
   }
 }
+.btn-light {
+  @extend .btn;
+  background: lighten($primary-color, 40);
+  color: hsl(0, 0%, 20%);
+}
 .btn-dark {
   @extend .btn;
   background: darken($primary-color, 50);
   color: #fff;
-}
-.btn-light {
-  @extend .btn;
-  background: lighten($primary-color, 50);
-  color: #333;
 }
 
 // Footer

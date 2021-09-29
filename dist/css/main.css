@@ -25,6 +25,9 @@ h3 {
     padding: 0.2rem 1rem;
     background: #004b70; }
 
+.text-secondary {
+  color: #f2cc0d; }
+
 a {
   color: #fff;
   text-decoration: none; }
@@ -41,24 +44,18 @@ header {
   list-style: none;
   margin: 20px 0;
   padding: 0; }
-
-.menu ul li {
-  display: inline-block;
-  font-size: 1.1rem;
-  font-weight: bold; }
-
-.menu ul li a {
-  color: white;
-  padding: 8px 15px;
-  transition: all 0.5s ease-out; }
-
-.menu ul li a:hover {
-  background-color: #f2cc0d;
-  color: black;
-  box-shadow: 0 0 10px white; }
-
-.text-secondary {
-  color: #f2cc0d; }
+  .menu ul li {
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: bold; }
+    .menu ul li a {
+      color: white;
+      padding: 8px 15px; }
+      .menu ul li a:hover {
+        color: black;
+        background-color: #f2cc0d;
+        box-shadow: 0 0 10px white;
+        transition: all 0.5s ease-out; }
 
 main {
   padding: 4rem;
@@ -175,21 +172,21 @@ main {
       padding: 0.5rem 1.5rem;
       background: #f2cc0d; }
 
-.btn, .btn-dark, .btn-light {
+.btn, .btn-light, .btn-dark {
   display: block;
   padding: 0.5rem 1rem;
   border: 0;
   margin-bottom: 0.3rem; }
-  .btn:hover, .btn-dark:hover, .btn-light:hover {
+  .btn:hover, .btn-light:hover, .btn-dark:hover {
     background: #f2cc0d; }
+
+.btn-light {
+  background: #33bbff;
+  color: #333333; }
 
 .btn-dark {
   background: black;
   color: #fff; }
-
-.btn-light {
-  background: #66ccff;
-  color: #333; }
 
 #main-footer {
   height: 60px;
