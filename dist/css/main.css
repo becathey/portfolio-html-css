@@ -241,6 +241,8 @@ main {
     height: 200px; }
   .bio {
     font-size: 1.25rem; }
+  .skills-title {
+    font-size: 1.25rem; }
   .projects {
     grid-template-columns: 1fr; } }
 
